@@ -15,8 +15,10 @@ router.post('/', (req, res) => {
         }
         else{
             Account.findOneAndUpdate({authDoc: req.body.userID}, {initialCredit: req.body.transfer})
-            res.send('done')
+            res.send(203)
         }
     })
     .catch((err) => console.log(err))
 })
+
+module.exports = router
