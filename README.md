@@ -21,6 +21,14 @@ To use the application:
 
 Run npm install in both projects before continuing.
 
+To set up mongoDB:
+    - You need to set up a connection in localhost:27017
+    - Create a database named bankAPI with this two directories:
+        - Users
+        - Accounts
+        
+You are ready to start the application!
+
 Start the API with node[mon] app.js (it will start in http://localhost:5000/)
 
 Start the React Application with npm start (it will start in http://localhost:3000/)

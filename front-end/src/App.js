@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {Row, Col} from 'reactstrap'
 import axios from 'axios'
@@ -68,7 +67,7 @@ class App extends Component {
               <Col>
                 <form onSubmit={this.handleTransaction}>
                   <Row>
-                    <h2>Make a transaction (you have to register first)</h2>
+                    <h2>Make a transaction (you have to register first)</h2><br></br>
                     <Col md={6}>
                       <label>ID</label>
                       <input type="text" name="userID"/>
@@ -77,7 +76,9 @@ class App extends Component {
                       <label>Quantity you want to put into your account</label>
                       <input type="text" name="quantity" ></input>
                     </Col>
-                    <button type="submit">Send</button>
+                    <Col md={6}>
+                      <button type="submit">Submit</button>
+                    </Col>
                   </Row>
                 </form>
               </Col> 
@@ -94,7 +95,7 @@ class App extends Component {
               <div>
                 <form onSubmit={this.handleNewUser}>
                   <Row>
-                    <h2>Register with your ID</h2>
+                    <h2>Register with your ID</h2><br></br>
                     <Col md={6}>
                       <label>Name</label>
                       <input type="text" name="name" id="nameInput" placeholder="Eg: Jose"/>
@@ -109,7 +110,9 @@ class App extends Component {
                       <label>Identification Document (ID)</label>
                       <input type="text" name="userID" id="idInput" placeholder="Eg: 00000000A"></input>
                     </Col>
-                    <button type="submit">Submit</button>
+                    <Col md={6}>
+                      <button type="submit">Submit</button>
+                    </Col>
                   </Row>
                 </form>
               </div>
@@ -127,7 +130,7 @@ class App extends Component {
               <div>
                 <form onSubmit={this.handleNewUser}>
                   <Row>
-                    <h2>Register with your ID</h2>
+                    <h2>Register with your ID</h2><br></br>
                     <Col md={6}>
                       <label>Name</label>
                       <input type="text" name="name" id="nameInput" placeholder="Eg: Jose"/>
@@ -142,7 +145,9 @@ class App extends Component {
                       <label>Identification Document (ID)</label>
                       <input type="text" name="userID" id="idInput" placeholder="Eg: 00000000A"></input>
                     </Col>
-                    <button type="submit">Submit</button>
+                    <Col md={6}>
+                      <button type="submit">Submit</button>
+                    </Col>
                   </Row>
                 </form>
               </div>
@@ -150,7 +155,7 @@ class App extends Component {
             <Col>
               <form onSubmit={this.handleTransaction}>
                 <Row>
-                  <h2>Make a transaction (you have to register first)</h2>
+                  <h2>Make a transaction (you have to register first)</h2><br></br>
                   <Col md={6}>
                     <label>ID</label>
                     <input type="text" name="userID"/>
@@ -159,7 +164,9 @@ class App extends Component {
                     <label>Quantity you want to put into your account</label>
                     <input type="text" name="quantity" ></input>
                   </Col>
-                  <button type="submit">Send</button>
+                  <Col md={6}>
+                      <button type="submit">Submit</button>
+                  </Col>
                 </Row>
               </form>
             </Col> 
