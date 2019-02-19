@@ -7,7 +7,6 @@ const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
 
-
 mongoose
   .connect('mongodb://localhost./bankAPI', {useNewUrlParser: true})
   .then(x => {

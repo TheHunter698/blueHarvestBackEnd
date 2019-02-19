@@ -18,10 +18,6 @@ class App extends Component {
     axios('http://localhost:5000/', {
       method: 'post',
       withCredentials: true,
-      headers: {
-        'Content-Type': 'application/json;charset=UTF-8',
-        "Access-Control-Allow-Origin": "*",
-      },
       data:{
         name: event.target.name,
         surname: event.target.surname,
@@ -39,7 +35,7 @@ class App extends Component {
   }
 
   handleTransaction = (event) => {
-     axios('http://localhost:5000/', {
+     axios('http://localhost:5000/transaction', {
       method: 'post',
       withCredentials: true,
       headers: {
@@ -47,7 +43,7 @@ class App extends Component {
         "Access-Control-Allow-Origin": "*",
       },
       data:{
-        ID: event.target.userID,
+        userID: event.target.userID,
         quantity: event.target.quantity,
       }
     })
